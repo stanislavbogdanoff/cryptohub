@@ -1,0 +1,118 @@
+:root {
+  --bg: rgb(18, 11, 36);
+  --bg-dark: rgb(10, 6, 20);
+  --txt: rgb(217, 217, 217);
+  --txt-pink: rgb(173, 2, 167);
+  --gold: rgb(239, 203, 44);
+ }
+
+.logo {
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(239, 203, 44);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.logo font {
+  color: var(--txt);
+}
+.logo img {
+  width: 3.5rem;
+  margin-right: 0.5rem;
+}
+.header-nav {
+  padding: 10px 5%;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+.header-nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style-type: none;
+}
+.header-nav li a {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: var(--txt);
+}
+.header-nav li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.header-nav .active a {
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--txt);
+}
+.header-nav .active {
+  border: none;
+  border-radius: 15px;
+  background: rgb(77, 17, 123);
+  background: linear-gradient(143deg, rgb(77, 17, 123) 0%, rgb(217, 0, 159) 100%);
+  color: #fff;
+  cursor: pointer;
+}
+.header-nav .active:hover {
+  text-decoration: none;
+  background: rgb(217, 0, 159);
+  box-shadow: 0px 0px 10px 10px rgba(201, 2, 214, 0.2)
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon .fas.fa-times {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
+}
+.menu-icon .fas.fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+
+/********************************** Media Queries ***********************************/
+
+@media screen and (max-width: 950px) {
+  nav {
+    padding: 0 3rem;
+    position: relative;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    padding: 3rem 0 4rem;
+    background-color: rgb(10, 6, 20);
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-list.closed {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  .logo img {
+    width: 2.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  nav {
+    padding: 0 1rem;
+  }
+}
