@@ -1,8 +1,6 @@
 # ₿ CryptoHub | React + Redux Toolkit | Stanislav Tiryoshin
 
-Todo List with extra features
-
-<img src="https://user-images.githubusercontent.com/69424907/176854350-6d749744-66e8-4509-abb5-f18d21beaa5a.png" width="800">
+Frontend App with API integration about cryptocoins
 
 > Tech used:
 
