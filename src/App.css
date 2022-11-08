@@ -250,11 +250,5 @@ section .title {
 @media screen and (max-width: 1360px) {
   .container {
     max-width: unset;
-    padding: 0 5%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .container {
-    padding: 0 4%;
   }
 }
