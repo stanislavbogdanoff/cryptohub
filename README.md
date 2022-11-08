@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# ₿ CryptoHub | React + Redux Toolkit | Stanislav Tiryoshin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todo List with extra features
 
-## Available Scripts
+<img src="https://user-images.githubusercontent.com/69424907/176854350-6d749744-66e8-4509-abb5-f18d21beaa5a.png" width="800">
 
-In the project directory, you can run:
+> Tech used:
 
-### `npm start`
+- React
+- Redux Toolkit
+- Axios
+- ChartJS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+TodoTracker allows you to authorize and save todos. Todos are displayed as a table (on mobile as cards) with number, time, text, status.  You can edit, delete and mark the todos as done or not done. Your stats such as completed and active todos are displayed on the top with a Doughnut Chart
 
-### `npm test`
+TodoTracker was developed based on Travesy Media's series [Learn the MERN stack](https://youtu.be/-0exw-9YJBo), but the functionality was modified. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Particularly, status, editablity and the stats chart were added; Frontend was heavily altered as well.
 
-### `npm run build`
+## Functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Register and Login
+- Enter a todo
+- Mark the todo as done or not done
+- Edit the todo 
+- Delete the todo
+- See the active and completed todos in different tables
+- Check your stats on a Dougnut Chart
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Might add deadline feature with todos being marked failed automatically if the deadline is missed.
 
-### `npm run eject`
+Other than that project is completely done.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Credentials
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright ©️ 2022 [Stanislav Tiryoshin](https://github.com/stanislavtiryoshin)
