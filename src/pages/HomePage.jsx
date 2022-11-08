@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Hero from '../components/Hero/Hero';
 import Features from '../components/Features/Features';
-import CallToAction from '../components/CallToAction/CallToAction';
 import Globals from '../components/Globals/Globals'
 import Cryptocurrencies from '../components/Cryptocurrencies/Cryptocurrencies';
 import Exchanges from '../components/Exchanges/Exchanges';
@@ -17,7 +16,7 @@ const HomePage = () => {
     <div className='home-page'>
       <Hero />
       <Features />
-      <MainCharts />
+      {/* <MainCharts /> */}
       <Globals />
       <section>
         <div className="title">

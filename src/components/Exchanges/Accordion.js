@@ -10,8 +10,8 @@ const Accordion = ({rank, title, content}) => {
   return (
     <details className={!isActive ? "accord-box" : "accord-box active"} onClick={() => setIsActive(!isActive)}>
       <summary className={!isActive ? "accord-heading" : "accord-heading active"}>
-        <h4>{rank}. <img src={content.image} alt="exchange icon" /> {title}</h4>
-        <h4><img src={btcImgUrl} alt="bitcoin logo"/>BTC {millify(content.trade_volume_24h_btc)}</h4>
+        <h4 className='accord-title'>{rank}. <img src={content.image} alt="exchange icon" /> {title}</h4>
+        <h4><img src={btcImgUrl} alt="bitcoin logo"/> {millify(content.trade_volume_24h_btc)}</h4>
         <LeftOutlined className={isActive ? "arrow active" : "arrow"} />
       </summary>
       <div className={!isActive ? "accord-content" : "accord-content active"}>

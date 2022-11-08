@@ -18,13 +18,15 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/currencies' element={<CurrenciesPage />} />
-          <Route path='/exchanges' element={<ExchangesPage />} />
-          <Route path='/news' element={<NewsPage />} />
-          <Route path='/crypto/:coinId' element={<CryptoDetailsPage />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/currencies' element={<CurrenciesPage />} />
+            <Route path='/exchanges' element={<ExchangesPage />} />
+            <Route path='/news' element={<NewsPage />} />
+            <Route path='/crypto/:coinId' element={<CryptoDetailsPage />} />
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </div>

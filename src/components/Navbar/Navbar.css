@@ -22,8 +22,7 @@
   margin-right: 0.5rem;
 }
 .header-nav {
-  padding: 10px 5%;
-  height: 10vh;
+  height: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;

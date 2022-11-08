@@ -70,15 +70,26 @@
 }
 @media screen and (max-width: 665px) {
   .globals {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
-  .globals-box, .globals-info {
+  .globals-box {
+    width: 80%;
+  }
+  .globals-info {
     width: 100%;
   }
   .globals-info {
+    padding: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .globals-box {
+    width: 100%;
   }
 }

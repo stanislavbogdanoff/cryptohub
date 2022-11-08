@@ -39,6 +39,19 @@ h1, h2, h3, h4 {
   min-height: 100vh;
   color: rgb(224, 224, 224);
 }
+.container {
+  width: 100%;
+  max-width: 1252px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wrapper-hor, .wrapper-ver {
+  display: flex;
+}
+.wrapper-hor {
+  align-items: center;
+  justify-content: space-between;
+}
 
 .cta-btn {
   background-color: var(--blue);
@@ -226,14 +239,22 @@ h1, h2, h3, h4 {
   color: var(--txt)
 }
 .home-page {
-  padding: 0 5%;
   display: flex;
   flex-direction: column;
   gap: 150px;
 }
-.exchanges-page, .currencies-page, .news-page {
-  padding: 0 5%;
-}
 section .title {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1360px) {
+  .container {
+    max-width: unset;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 4%;
+  }
 }
