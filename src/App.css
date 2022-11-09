@@ -296,7 +296,8 @@ section .title {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF !important
+  background-color:#ad02a7;
+  border-radius: 10px;
 }
 
 
