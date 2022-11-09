@@ -15,9 +15,6 @@
   flex-direction: column;
   gap: 15px;
 }
-.exchanges-box h1 {
-  color: var(--gold)
-}
 .accord-box {
   width: 100%;
   flex-direction: column;
@@ -59,23 +56,24 @@
   height: 1.5rem;
   border-radius: 100%;
 }
+.accord-content-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.accord-content-box.active {
+  max-height: 80vh;
+}
 .accord-content {
-  padding: 0 5rem;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  overflow: hidden;
-  max-height: 0px;
   border-radius: 5px;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  transition: 0.5s;
 }
 .accord-content i {
   color:rgba(255, 255, 255, 0.5);
-}
-.accord-content.active {
-  padding: 1rem 2rem;
-  max-height: 80vh;
-  transition: all 1s cubic-bezier(0, 1, 0, 1);
 }
 .accord-content a {
   color: var(--gold);
@@ -94,10 +92,6 @@
 .exchanges-box .search {
   padding: 0;
   margin-bottom: 3rem;
-}
-.exchanges-box h1 {
-  text-align: center;
-
 }
 @media screen and (max-width: 480px) {
   .accord-heading {

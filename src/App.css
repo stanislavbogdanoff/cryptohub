@@ -16,6 +16,10 @@
 html {
   font-size: 100%;
 }
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 body {
   font-family: 'DM Sans', sans-serif;
   background: radial-gradient(
@@ -33,6 +37,21 @@ p {
 h1, h2, h3, h4 {
   font-family: 'Titillium Web', sans-serif;
 }
+ul {
+  list-style: none;
+  display: flex;
+}
+a, button {
+  font-family: 'Titillium Web', sans-serif;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(224, 224, 224);
+}
+a:hover {
+  color: rgb(217, 0, 159);
+}
 .App {
   overflow-x: hidden;
   width: 100%;
@@ -44,9 +63,14 @@ h1, h2, h3, h4 {
   max-width: 1252px;
   padding: 0 15px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .wrapper-hor, .wrapper-ver {
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 .wrapper-hor {
   align-items: center;
@@ -206,7 +230,7 @@ h1, h2, h3, h4 {
   background-size: cover;
   background-position: center;
 }
-.btn-pink-solid a, .btn-pink-trans a {
+.btn-pink-solid, .btn-pink-trans {
   text-decoration: none;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
@@ -221,12 +245,13 @@ h1, h2, h3, h4 {
   color: #fff;
   cursor: pointer;
 }
-.btn-pink-solid a {
+a.btn-pink-solid, 
+.btn-pink-solid {
   color: var(--txt);
 }
-.btn-pink-solid:hover {
+a.btn-pink-solid:hover, .btn-pink-solid:hover {
   background: rgb(217, 0, 159);
-  box-shadow: 0px 0px 10px 10px rgba(201, 2, 214, 0.2)
+  box-shadow: 0px 0px 10px 10px rgba(201, 2, 214, 0.2);
 }
 .btn-pink-trans {
   background: none;
@@ -246,6 +271,37 @@ h1, h2, h3, h4 {
 section .title {
   margin-bottom: 30px;
 }
+
+/* PAGES */
+
+.page {
+  width: 100%;
+  padding: 100px 0;
+}
+.page_title {
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar {
+  width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF !important
+}
+
+
+/************************************ MEDIA QUERIES ***************************************/
+
 
 @media screen and (max-width: 1360px) {
   .container {

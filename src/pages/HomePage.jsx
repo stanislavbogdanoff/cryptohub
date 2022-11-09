@@ -13,10 +13,10 @@ import MainCharts from '../components/MainCharts/MainCharts';
 const HomePage = () => {
 
   return (
-    <div className='home-page'>
+    <div className='home-page page'>
       <Hero />
       <Features />
-      {/* <MainCharts /> */}
+      <MainCharts />
       <Globals />
       <section>
         <div className="title">

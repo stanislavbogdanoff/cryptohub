@@ -3,7 +3,9 @@ import CryptoDetails from '../components/CryptoDetails/CryptoDetails'
 
 const CryptoDetailsPage = () => {
   return (
-    <CryptoDetails />
+    <div className="cryptodetails-page page">
+      <CryptoDetails />
+    </div>
   )
 }
 

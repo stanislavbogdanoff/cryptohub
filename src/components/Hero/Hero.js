@@ -26,7 +26,7 @@ const Hero = () => {
             A resource for beginner crypto traders. Monitor current exchagne rates, check historic prices for fundamental analysis, read about exchanges and get fresh crypto news.
           </p>
           <div className="hero-btns">
-            <button className='btn-pink-solid'><Link to='/currencies' >Get started</Link></button>
+            <Link to='/currencies' className='btn-pink-solid'>Get started</Link>
           </div>
         </div>
       </div>

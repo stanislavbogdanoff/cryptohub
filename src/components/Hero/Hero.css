@@ -133,6 +133,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .hero-img-dec {
+    margin-top: -40rem;
+  }
   .hero-box {
     flex-direction: column;
     gap: 50px;

@@ -13,7 +13,7 @@ const Features = () => {
           <h4 className='title'>Features</h4>
           <h2>Explore CryptoHub's opportunities</h2>
           <p>CryptoHub is the best and easiest resource for beginners; get all the information you need for crypto trading and be one step closer to your success!</p>
-          <button className='btn-pink-solid'><Link to='/currencies'>Explore</Link></button>
+          <Link to='/currencies' className='btn-pink-solid'>Explore</Link>
         </div>
         <div className="features-cards-box">
           <div className="features-card">

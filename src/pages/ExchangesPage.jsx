@@ -4,7 +4,7 @@ import Exchanges from '../components/Exchanges/Exchanges'
 
 const ExchangesPage = () => {
   return (
-    <div className="exchanges-page">
+    <div className="exchanges-page page">
       <Exchanges />
     </div>
   )

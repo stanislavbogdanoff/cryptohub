@@ -25,7 +25,7 @@ const Exchanges = ({ simplified }) => {
     <div className="exchanges-box">
       {!simplified &&
         <>
-          <h1>Top 20 Exchanges</h1>
+          <h1 className='page_title'>Top 20 Exchanges</h1>
           <div className="search-box">
             <input type="text" placeholder='Search exchanges...' id="search-bar" onChange={e => setSearchTerm(e.target.value.toLocaleLowerCase())}/>
             <span 
