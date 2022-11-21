@@ -70,7 +70,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, simplified }) => {
       y: {
         display: simplified ? false : true,
         grid: {
-          color: 'rgba(255, 255, 255, 0.2)'
+          color: 'rgba(255, 255, 255, 0)'
         },
         ticks: {
           color: 'rgba(255, 255, 255, 0.5)'
@@ -79,7 +79,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, simplified }) => {
       x: {
         display: simplified ? false : true,
         grid: {
-          color: 'rgba(255, 255, 255, 0.2)'
+          color: 'rgba(255, 255, 255, 0)'
         },
         ticks: {
           color: 'rgba(255, 255, 255, 0.5)'
