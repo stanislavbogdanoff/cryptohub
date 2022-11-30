@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <div className="container">
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/currencies' element={<CurrenciesPage />} />
@@ -26,7 +25,6 @@ function App() {
             <Route path='/news' element={<NewsPage />} />
             <Route path='/crypto/:coinId' element={<CryptoDetailsPage />} />
           </Routes>
-        </div>
         <Footer />
       </Router>
     </div>

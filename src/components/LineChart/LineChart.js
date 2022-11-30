@@ -110,7 +110,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, simplified }) => {
         <div className="chart-header">
           <div className="price-container">
             <h5 className="price-change">Change: <font className={changeClass}>{coinHistory?.data?.change}%</font></h5>
-            <h5 className="current-price">Current {coinName} Price: $ {millify(currentPrice, {precision: 3})}</h5>
+            <h5 className="current-price">{coinName} Price: $ {millify(currentPrice, {precision: 3})}</h5>
           </div>
         </div>
       }

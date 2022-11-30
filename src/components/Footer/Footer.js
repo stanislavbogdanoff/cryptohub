@@ -1,14 +1,14 @@
 import React from 'react';
 import { MenuList } from './MenuList';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/cryptohub.png';
-import { LinkedinOutlined, GithubOutlined, GoogleOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 
 import './Footer.css'
 
 const Footer = () => {
   return (
-    <section className="footer-box">
+    <footer className="footer-box">
       <div className="logo">
         <img src={logo} alt="" />
         Crypto<font>Hub</font>
@@ -31,7 +31,7 @@ const Footer = () => {
       <div className='credentials'>
         Coded by <a href="https://www.linkedin.com/in/stanislav-tiryoshin/">Stanislav Tiryoshin</a> ⓒ 2022
       </div>
-    </section>
+    </footer>
   )
 }
 

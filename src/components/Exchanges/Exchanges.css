@@ -21,7 +21,6 @@
   border-radius: 5px;
 }
 .accord-box.active {
-  background-color: rgba(255, 255, 255, .15);
 }
 .accord-box, .accord-heading {
   display: flex;
@@ -59,7 +58,9 @@
 .accord-content-box {
   max-height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  background-color: rgba(255, 255, 255, .15);
+
+  transition: all 0.5s ease-in-out;
 }
 .accord-content-box.active {
   max-height: 80vh;
@@ -93,6 +94,11 @@
   padding: 0;
   margin-bottom: 3rem;
 }
+
+.exchanges_wrapper {
+  gap: 35px;
+}
+
 @media screen and (max-width: 480px) {
   .accord-heading {
     padding: 1rem;

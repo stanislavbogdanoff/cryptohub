@@ -7,13 +7,12 @@
   --txt-pink: rgb(173, 2, 167);
   --gold: rgb(255, 208, 0);
 }
-.currencies-box {
-  margin-bottom: 5rem;
-}
 .crypto-card-box {
+  min-height: 300px;
+  width: 100%;
   padding: 0;
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .crypto-card-box a {
@@ -67,42 +66,23 @@
 .crypto-card p {
   margin-bottom: 1rem;
 }
-.search-box {
-  width: 100%;
-  margin: 0 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.search-box input {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: rgba(255, 255, 255, 0.236);  
-  backdrop-filter: blur(5px);
-  width: 350px;
-  padding: 0.7rem 1rem;
-  border: none;
-  border-radius: 60px;
-  color: #fff;
-}
-.search-box input::placeholder {
-  color: rgb(200, 200, 200);
+.search-input {
+  padding-right: 40px;
 }
 .clear-btn {
-  width: fit-content;
-  height: fit-content;
-  font-size: 10px;
-  padding: 5px;
+  margin-left: -40px;
+  font-size: 25px;
   border: none;
   background: transparent;
   color:rgb(200, 200, 200);
-  border: 2px solid rgb(200, 200, 200);
-  border-radius: 100%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clear-btn:hover {
-  cursor: pointer;
   color: rgb(255, 0, 85);
-  border: 2px solid rgb(255, 0, 85);
 }
 .btn-follow {
   background: none;
@@ -111,36 +91,6 @@
   z-index: 10;
   bottom: 2rem;
   right: 2rem;
-}
-.pages-box {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0;
-}
-.btn-page {
-  background: none;
-  border: none;
-  color: #fff;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 16px;
-  width: 1.7rem;
-  height: 1.76rem;
-  border-radius: 100%;
-  cursor: pointer;
-}
-.btn-page:hover {
-  color: #030408;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 100%;
-}
-.btn-page.active {
-  background-color: rgba(255, 255, 255, 1);
-  color: #030408;
-}
-.currencies-page h1 {
-  color:rgb(255, 208, 0);
-  text-align: center;
 }
 .negat {
   color: rgb(255, 0, 85);
@@ -151,6 +101,68 @@
 .neutr {
   color: #fff;
 }
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+.page-nav {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  text-align: middle;
+  color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.page-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.page-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.page-item:hover .page-link {
+  color: #030408;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+}
+.page-item.active .page-link {
+  background-color: rgba(255, 255, 255, 1);
+  color: #030408;
+}
+
+/* Not Found */
+
+.notfound-box {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************ Media Queries ************/
+
 @media screen and (max-width: 1200px) {
   .crypto-card-box {
     grid-template-columns: 31% 31% 31%;
